@@ -1,0 +1,64 @@
+input format :
+
+<filename>.srt:<source_language>[:<destination_language>]
+
+eg.
+	Superman3D.srt:en:fr
+	above input translates Superman3D.srt from english to french
+	the new file created will be fr_Superman3D.srt
+
+Info:
+	[optional]
+	<input specification>
+	Destination by default is english (en)
+
+Table for Encoding Language: 
+
+	"Encoding":"Language"
+
+	"en","english"
+	"fr","french"
+	"ar","arabic"
+	"bg","bulgarian"
+	"zh-cn","chinese (Simplified)"
+	"zh-TW","Chinese (Traditional)"
+	"hr","Croatian"
+	"cs","Czech"
+	"da","Danish"
+	"nl","Dutch"
+	"en","English"
+	"tl","Filipino"
+	"fi","Finnish"
+	"fr","French"
+	"de","German"
+	"el","Greek"
+	"iw","Hebrew"
+	"hi","Hindi"
+	"hu","Hungarian"
+	"id","Indonesian"
+	"ga","Irish"
+	"it","Italian"
+	"ja","Japanese"
+	"ko","Korean"
+	"la","Latin"
+	"no","Norwegian"
+	"fa","Persian"
+	"pl","Polish"
+	"pt","Portuguese"
+	"ro","Romanian"
+	"ru","Russian"
+	"sr","Serbian"
+	"sk","Slovakian"
+	"es","Spanish"
+	"sv","Swedish"
+	"th","Thai"
+	"tr","Turkish"
+	"vi","Vietnamese"
+
+Limitations :
+	Since this code used free translation API
+	subsequent translation rquests have an interval of three seconds
+	therefore translation time is 3*number_of_lines_translated
+
+
+
