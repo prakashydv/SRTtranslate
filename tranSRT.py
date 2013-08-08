@@ -19,7 +19,7 @@ while True:
 		break;
 	elif(len(data)==2):
 		source_language=data[1]
-		target_language="en"
+		target_language=str("en")
 		break;
 	else:
 		print u'format--->\n<filename.srt>:<source_language>:<destination_language>\nconsult README file for more information'
@@ -27,7 +27,7 @@ try:
 	flog=open('log','a')
 	f=open(data[0],'r')
 	fout=open(target_language+'_'+data[0],'wb')
-	flog.write(u'\n Start Time: '+str(datetime.now())+u'\nfile:'+data[0]+u'\n[source language:'+data[1]+u']\n[destination language: '+data[2]+']')
+	flog.write(u'\n Start Time: '+str(datetime.now())+u'\nfile:'+data[0]+u'\n[source language:'+source_language+u']\n[destination language: '+target_language+']')
 	
 except:
 	flog.write('\nTranslation unsuccessful.\nFinish time '+str(datetime.now())+u'\n\n')
