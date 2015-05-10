@@ -2,6 +2,7 @@ import re
 import json
 import urllib
 import time
+import sys
 from datetime import datetime
 
 
@@ -12,7 +13,10 @@ def isNotNum(x):
 
 # filename:source_language:target_language
 while True:
-	data=raw_input().split(':')
+	if len(sys.argv) == 2:
+		data = sys.argv[1].split(':')
+	else:
+		data = raw_input().split(':')
 	if(len(data)==3):
 		source_language=data[1]
 		target_language=data[2]
